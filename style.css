@@ -1,7 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
+/* main{
+    background: url(back.jpg);
+    height: 100%;
+} */
+
 body {
     background-color: white;
     font-size: larger;
@@ -14,7 +20,7 @@ header {
 }
 
 h2 {
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
     text-align: center;
     border-radius: 25px;
     margin: 25px;
@@ -33,7 +39,7 @@ h2 {
 }
 
 .other {
-    
+
     text-align: center;
     border-radius: 25px;
 }
@@ -50,7 +56,7 @@ a:hover {
     border-radius: 4px;
 }
 
-.umesh{
+.umesh {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -59,26 +65,8 @@ a:hover {
     padding: 2px;
 }
 
-.icon{
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-}        
-
-img{
-    height: 100px;
-    width: 100px;
-    position: fixed;
-    bottom:  75px;
-    right: 15px;
-    border-radius: 60px;
-    background-color: white;
-}
-
 
 /* Navbar CSS */
-
-
 
 nav ul {
     list-style: none;
@@ -98,10 +86,12 @@ nav ul li a {
     display: block;
 }
 
-.dropdown{
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(185,148,233,1) 100%);
-    margin: 5px;
+.dropdown {
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(185, 148, 233, 1) 100%);
+    justify-content: center;
+    left: 30px;
     text-align: center;
+    border-radius: 12px;
 }
 
 .dropdown-menu {
@@ -141,7 +131,7 @@ nav ul li:hover .dropdown-menu {
     top: 0;
     left: 100%;
     background-image: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
-    width: 200px;
+    width: 10vw;
     list-style-type: none;
     padding: 0;
     margin: 0;
