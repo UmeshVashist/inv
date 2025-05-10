@@ -56,7 +56,7 @@ a:hover {
     text-decoration: underline;
     border-radius: 6px;
     color: black;
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(185, 148, 233, 1) 100%);
+    background: linear-gradient(27deg,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
 }
 
 
