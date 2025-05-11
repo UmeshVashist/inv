@@ -73,6 +73,11 @@ a:hover {
 
 /* Navbar CSS */
 
+nav {
+    display: flex;
+    justify-content: center;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
