@@ -158,3 +158,34 @@ nav ul li:hover .dropdown-menu {
 .sub-dropdown:hover .sub-dropdown-menu {
     display: block;
 }
+
+
+/* Nay Quary Button section*/
+
+.btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 17px;
+}
+
+.btn:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.box b {
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
