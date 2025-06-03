@@ -10,7 +10,7 @@ button.addEventListener("click", () => {
         box.innerHTML = `
             <p class="query-message">
                 <b>If you want to add new link please contact on mentioned email!:- 
-                <a href="mailto:link.inv.help@gmail.com">support-inv</a></b><br>
+                <a href="mailto:link.inv.help@gmail.com">link.inv.help@gmail.com</a></b><br>
                 <b>Note:- When contacting by email, please mention the link or name of the website you want to add!</b>
             </p>
         `;
