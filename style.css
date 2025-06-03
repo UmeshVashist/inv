@@ -183,7 +183,7 @@ nav ul li:hover .dropdown-menu {
     /* Optional: removes underline */
 }
 
-.found {
+.found{
     color: black;
     position: absolute;
     left: 57%;
