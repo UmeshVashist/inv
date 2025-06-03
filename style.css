@@ -108,7 +108,9 @@ nav ul li:hover .dropdown-menu {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-    /* background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%); */
+    position: absolute;
+    right: 20%;
+    top: 18%;
     background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     border: none;
     border-radius: 8px;
