@@ -136,13 +136,16 @@ nav ul li:hover .dropdown-menu {
 
 .query-message {
     color: black;
+    align-items: center;
+    right: -10%;
     justify-content: center;
     position: relative;
     bottom: auto;
     background-color: rgb(203, 111, 226);
-    /* padding: 1px; */
     margin-top: 5px;
-    border-radius: 8px;
+    border-radius: 15px;
+    height: 50%;
+    width: 80%;
     font-size: 16px;
 }
 
