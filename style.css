@@ -5,7 +5,7 @@
 
 body {
     background-image: url(repair.png);
-    background-size: contain; 
+    background-size: contain;
     display: block;
     background-position: center;
     background-color: rgb(94, 90, 90);
@@ -20,55 +20,24 @@ header {
     top: 0;
 }
 
-h2 {
-    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
-    text-align: center;
-    border-radius: 25px;
-    margin: 25px;
-}
 
-.secondry {
-    background-image: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
-    text-align: center;
-    border-radius: 25px;
-}
-
-.banks {
-    background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
-    text-align: center;
-    border-radius: 25px;
-}
-
-.other {
-
-    text-align: center;
-    border-radius: 25px;
-}
-
-a {
-    display: inline-block;
-    text-decoration: none;
-    color: rgb(206, 204, 204);
-    transition: background-color 0.3s ease;
-} 
-
-a:hover { 
+a:hover {
     text-decoration: underline;
     border-radius: 6px;
     color: black;
-    background: linear-gradient(27deg,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    background: linear-gradient(27deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
 }
 
 
 
-.umesh {
+/* .umesh {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 20px;
     margin: 22px;
     padding: 2px;
-}
+} */
 
 
 /* Navbar CSS */
@@ -97,12 +66,12 @@ nav ul li a {
     display: block;
 }
 
-.sunny:hover{
+.sunny:hover {
     color: white;
     text-decoration: underline;
 }
 
-.sunny ul a :hover{
+.sunny ul a :hover {
     color: white;
     border-radius: 4px;
 }
@@ -114,7 +83,8 @@ nav ul li a {
     text-align: center;
     border-radius: 12px;
     height: 8vh;
-    
+    cursor: pointer;
+
 }
 
 .dropdown-menu {
@@ -185,7 +155,7 @@ nav ul li:hover .dropdown-menu {
 }
 
 .box b {
-    color: whitesmoke;
+    /* color: whitesmoke; */
     text-align: center;
     font-weight: bold;
     font-size: 16px;
@@ -193,4 +163,86 @@ nav ul li:hover .dropdown-menu {
     align-items: center;
     justify-content: center;
     font-size: x-large;
+}
+
+
+.query-message {
+    color: black;
+    justify-content: center;
+    position: relative;
+    bottom: auto;
+    background-color: rgb(203, 111, 226);
+    /* padding: 1px; */
+    margin-top: 5px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.search-container input {
+    border: 1px solid #ccc;
+    left: 20%;
+    bottom: 20px;
+    position: relative;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    transition: box-shadow 0.2s ease;
+}
+
+.searchInput {
+    position: relative;
+    width: 50%;
+    padding: 10px 40px 10px 12px;
+    font-size: 16px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.search-container input:focus {
+    outline: none;
+    color: white;
+    background: linear-gradient(5deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    box-shadow: 0 0 25px;
+}
+
+.searchResults a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: -40px;
+    left: 20%;
+    /* Optional: removes underline */
+}
+
+.searchResults a:hover {
+    color: rgb(250, 249, 249);
+    /* Optional hover effect */
+}
+
+
+
+.actionButton:hover {
+    outline: none;
+    color: #f10ad3;
+    background-color: (5deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    box-shadow: 0 0 30px;
+}
+
+.actionButton {
+    position: relative;
+    left: 40%;
+    top: -40px;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+.input-wrapper {
+    position: relative;
+    width: 400px;
 }
