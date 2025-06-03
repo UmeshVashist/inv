@@ -69,7 +69,7 @@ searchInput.addEventListener("input", function () {
                 ${matchedLinks.join("")}
             `;
     } else {
-        searchResults.innerHTML = `<p style="color: white; position: absolute; left: 57% ">No matching websites found.</p>`;
+        searchResults.innerHTML = `<p class="found">No matching websites found.</p>`;
     }
 });
 
