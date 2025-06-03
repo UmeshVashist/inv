@@ -66,7 +66,7 @@ nav ul li a {
 
 .dropdown {
     /* background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(185, 148, 233, 1) 100%); */
-    background: linear-gradient(0deg,rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
     justify-content: center;
     left: 3px;
     text-align: center;
@@ -109,7 +109,7 @@ nav ul li:hover .dropdown-menu {
     margin: 20px auto;
     padding: 10px 20px;
     /* background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%); */
-    background: radial-gradient(circle,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -174,12 +174,20 @@ nav ul li:hover .dropdown-menu {
 }
 
 .searchResults a {
-    color: white;
+    color: black;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
     text-decoration: none;
     position: relative;
     top: -40px;
     left: 20%;
     /* Optional: removes underline */
+}
+
+.found {
+    color: black;
+    position: absolute;
+    left: 57%;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
 
 .searchResults a:hover {
