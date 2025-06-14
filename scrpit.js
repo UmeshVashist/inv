@@ -10,7 +10,7 @@ button.addEventListener("click", () => {
         box.innerHTML = `
             <p class="query-message">
                 <b>If you want to add new link please contact on mentioned email!:- 
-                <a href="mailto:link.inv.help@gmail.com">link.inv.help@gmail.com</a></b><br>
+                <a href="mailto:us781819@gmail.com">link.inv.help@gmail.com</a></b><br>
                 <b>Note:- When contacting by email, please mention the link or name of the website you want to add!</b>
             </p>
         `;
@@ -74,16 +74,16 @@ searchInput.addEventListener("input", function () {
 });
 
 
-
 // const searchInput = document.getElementById("searchInput");
 const actionButton = document.getElementById("actionButton");
 
 // Update button icon depending on input content
 searchInput.addEventListener("input", () => {
     if (searchInput.value.trim() === "") {
-        actionButton.textContent = "📋"; // Paste icon
+        // actionButton.textContent = "📋"; // Paste icon
+        actionButton.innerHTML = `<img src="copy.png" width="30" height="30" />`; // Paste icon
     } else {
-        actionButton.textContent = "❌"; // Clear icon
+        actionButton.innerHTML = `<img src="clear.png" width="30" height="30" />`; // Clear icon
     }
 });
 
@@ -105,3 +105,63 @@ actionButton.addEventListener("click", async () => {
         document.getElementById("searchResults").innerHTML = "";
     }
 });
+
+
+// Speack Fun sec.
+
+const micButton = document.getElementById("micButton");
+
+if ('webkitSpeechRecognition' in window) {
+    const recognition = new webkitSpeechRecognition();
+    recognition.lang = 'en-IN';
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    micButton.addEventListener("click", () => {
+        recognition.start();
+        micButton.disabled = true;
+        micButton.textContent = "🎙️ Listening...";
+    });
+
+    recognition.onresult = (event) => {
+        const speechText = event.results[0][0].transcript.toLowerCase().trim();
+        const searchInput = document.getElementById("searchInput");
+        searchInput.value = speechText;
+        searchInput.dispatchEvent(new Event("input"));
+
+        const allLinks = document.querySelectorAll("a");
+        const matchedLinks = [];
+
+        allLinks.forEach(link => {
+            const linkText = link.textContent.toLowerCase();
+            const linkHref = link.href.toLowerCase();
+            if (
+                linkText.includes(speechText) ||
+                speechText.includes(linkText) ||
+                linkHref.includes(speechText)
+            ) {
+                matchedLinks.push(link.href);
+            }
+        });
+
+        if (matchedLinks.length === 1) {
+            window.open(matchedLinks[0], "_blank");
+        } else if (matchedLinks.length > 1) {
+            console.log("Multiple matches found. No auto open.");
+        } else {
+            console.log("No match found.");
+        }
+    };
+
+    recognition.onerror = (event) => {
+        alert("Voice error: " + event.error);
+    };
+
+    recognition.onend = () => {
+        micButton.disabled = false;
+        micButton.innerHTML = `<img src="mic.png" width="30" height="30" />`;
+    };
+} else {
+    micButton.style.display = "none";
+    alert("Your browser does not support speech recognition.");
+}
