@@ -4,11 +4,10 @@
 }
 
 body {
-    background-image: url(repair.png);
     background-size: contain;
     display: block;
     background-position: center;
-    background-color: rgb(94, 90, 90);
+    /* background-color: rgb(94, 90, 90); */
     background-repeat: no-repeat;
     font-size: larger;
 
@@ -102,15 +101,15 @@ nav ul li:hover .dropdown-menu {
 }
 
 
-/* Nay Quary Button section*/
+/* Any Quary Button section*/
 
 .btn {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
     position: absolute;
-    right: 20%;
-    top: 18%;
+    right: 18%;
+    top: 16%;
     background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     border: none;
     border-radius: 8px;
@@ -144,6 +143,7 @@ nav ul li:hover .dropdown-menu {
     position: relative;
     bottom: auto;
     background-color: rgb(203, 111, 226);
+    /* padding: 1px; */
     margin-top: 5px;
     border-radius: 15px;
     height: 50%;
@@ -151,31 +151,36 @@ nav ul li:hover .dropdown-menu {
     font-size: 16px;
 }
 
-.search-container input {
-    border: 1px solid #ccc;
-    left: 20%;
-    bottom: 20px;
+/* search section start */
+
+.search-container {
+    text-align: center;
+    margin: 70px auto;
     position: relative;
-    display: flex;
-    justify-self: center;
+    width: 35%;
+}
+
+.input-wrapper {
+    display: inline-flex;
     align-items: center;
-    transition: box-shadow 0.2s ease;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .searchInput {
-    position: relative;
-    width: 50%;
-    padding: 10px 40px 10px 12px;
+    flex: 1;
+    padding: 10px 12px;
     font-size: 16px;
+    border: 1px solid #ccc;
     border-radius: 12px;
     box-sizing: border-box;
 }
 
 .search-container input:focus {
     outline: none;
-    color: white;
-    background: linear-gradient(5deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
-    box-shadow: 0 0 25px;
+    box-shadow: #f803ec 0 0 25px;
 }
 
 .searchResults a {
@@ -183,15 +188,24 @@ nav ul li:hover .dropdown-menu {
     background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
     text-decoration: none;
     position: relative;
-    top: -40px;
-    left: 20%;
+    top: 20px;
+    left: 3%;
+    gap: 2;
     /* Optional: removes underline */
 }
 
-.found{
+.searchResults a:hover {
+    gap: 10px;
+    border-radius: 6px;
+    color: black;
+    background: linear-gradient(27deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+.found {
     color: black;
     position: absolute;
-    left: 57%;
+    left: 30%;
+    top: 60px;
     background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
 
@@ -201,29 +215,30 @@ nav ul li:hover .dropdown-menu {
 }
 
 
-
-.actionButton:hover {
-    outline: none;
-    color: #f10ad3;
-    background-color: (5deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
-    box-shadow: 0 0 30px;
-}
-
 .actionButton {
-    position: relative;
-    left: 40%;
-    top: -40px;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(-50%);
-    background: transparent;
+    background: none;
     border: none;
     cursor: pointer;
-    font-size: 18px;
+    margin-left: -45px;
+    /* keeps copy icon inside input */
+    z-index: 1;
+    padding: 0;
+    outline: none;
 }
 
+.micButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: -60px;
+    /* adds 10px gap from copy button */
+    z-index: 1;
+    padding: 0;
+    outline: none;
+}
 
-.input-wrapper {
-    position: relative;
-    width: 400px;
+.actionButton:hover,
+.micButton:hover {
+    z-index: 1;
+    transform: scale(1.2);
 }
