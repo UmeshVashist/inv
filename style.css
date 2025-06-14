@@ -4,13 +4,13 @@
 }
 
 body {
+     background-image: url(repair.png);
     background-size: contain;
     display: block;
     background-position: center;
-    /* background-color: rgb(94, 90, 90); */
+    background-color: rgb(94, 90, 90);
     background-repeat: no-repeat;
     font-size: larger;
-
 }
 
 header {
