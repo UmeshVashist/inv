@@ -246,25 +246,18 @@
         </ul>
     </nav>
 
-    <<div class="search-container" id="search-container"
-        style="text-align: center; margin: 100px; position: relative; display: inline-block; width: 60%;">
-        <!-- <input type="text" id="searchInput" autocomplete="off" placeholder="Search website name..."
-            style="padding: 10px 40px 10px 10px; width: 100%; border-radius: 12px; font-size: 16px;">
-        
-
-        <button class="actionButton" id="actionButton"
-            style="position: fix; right: 50px; top: 35%; transform: translateY(-50%); border: none; background: transparent; cursor: pointer; font-size: 18px;">
-            📋
-        </button> -->
-
-        <input type="text" class="searchInput" id="searchInput" autocomplete="off" placeholder="Search website name..." />
-        <button class="actionButton" id="actionButton">📋</button>
-
-        <div class="searchResults" id="searchResults" style="margin-top: 20px;"></div>
+     <div class="search-container">
+        <div class="input-wrapper">
+            <input type="text" class="searchInput" id="searchInput" autocomplete="off" placeholder="Search website name…" />
+            <button class="actionButton" id="actionButton">
+                <img src="copy.png" width="30" height="30" />
+            </button>
+            <button class="micButton" id="micButton" title="Speak">
+                <img src="mic.png" width="30" height="30" />
+            </button>
         </div>
-
-
-
+        <div class="searchResults" id="searchResults"></div>
+    </div>
 
         <div class="contnor">
             <div class="box">
